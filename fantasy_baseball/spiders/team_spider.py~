@@ -1,0 +1,8 @@
+from scrapy.spider import BaseSpider
+from scrapy.http import Request
+from scrapy.selector import HtmlXPathSelector
+from fantasy_baseball.items import TeamPlayerItem
+
+class TeamSpider(BaseSpider):
+  name = "fbb"
+  allowed_domains = ["games.espn.go.com"]
